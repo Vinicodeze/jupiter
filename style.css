@@ -1,8 +1,10 @@
 *{
     background-image: url("img/jupterFundo.jpg");
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
+
+
 
 h1{
     color: azure;

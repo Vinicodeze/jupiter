@@ -2,12 +2,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 header{
     display: flex;
     align-items: center;
-    padding: 20px 40px;
+    padding: 40px;
 }
 
 header nav{
@@ -21,21 +22,112 @@ header nav ul{
 }
 
 header nav ul li{
-    margin-left: 20px;
+    margin-left: 2px;
 }
 
 header nav ul li a{
+    margin-left: 80px;
+    margin-right: 80px;
     text-decoration: none;
     font-size: 16px;
     transition: 0.2 ease;
+    color:#cea292;
+    cursor: pointer;
+    display: inline-block;
+    position:relative;
 }
 
 header nav  ul li a:hover{
     color: #ffff;
 }
 
+header nav  ul li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;    /* Espessura do sublinhado */
+    bottom:0;
+    left: 0;
+    background-color: azure;    /* Cor do sublinhado */
+    transform: scaleX(0);   /* Começa escondido */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+header nav  ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 body{
     color: white;
+}
+
+h1{
+    color:#cebb92;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85px;
+    margin-top: 170px;
+    position:absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: 1300px;
+    display: block;
+    object-fit: cover;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h2{
+    color:#cea292;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 800 ;
+    margin-top: 170px;
+    margin-left: 55px;
+}
+
+
+.containerSobre{
+    display: flex;
+    margin-left: 55px;
+    margin-right: 35px;
+
+}
+
+.texto p{
+    font-size: 20px;
+
+}
+
+.btn{
+    margin-top: 50px;
+}
+.btn a{
+    
+    background-color: #cea292;
+    color:#1E1E1E;
+    border:nome;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #997464e1;
+
+
+}
+iframe{
+    margin: 10px 70px;
 }
 
 .carrosel {
@@ -75,12 +167,6 @@ body{
     letter-spacing: 2px;
 }
 
-h1{
-    color: azure;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 85px;
-    padding-top: 100px;
-}
+
 
 /* teste */

@@ -115,7 +115,7 @@ h2{
     
     background-color: #cea292;
     color:#1E1E1E;
-    border:nome;
+    border:none;
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 10px;
@@ -156,7 +156,7 @@ iframe{
     height: 420px;
     object-fit: cover;
     border-radius: 16px;
-    border: 1px solid #2a1f1a;
+    border: 4px solid #2a1f1a;
     display: block;
     transition: transform 0.4s ease;
 }

@@ -1,8 +1,12 @@
 *{
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
 }
 
 header{
@@ -45,11 +49,10 @@ header nav  ul li a::after{
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;    /* Espessura do sublinhado */
+    height: 2px;    
     bottom:0;
     left: 0;
-    background-color: azure;    /* Cor do sublinhado */
-    transform: scaleX(0);   /* Começa escondido */
+    background-color: azure; 
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -188,3 +191,80 @@ iframe{
 
 .carrosel-item h3::before { right: 100%; margin-right: -52px; }
 .carrosel-item h3::after  { left: 100%;  margin-left:  -52px; }
+
+h3{
+    color:#9b796c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800 ;
+    margin-top: 170px;
+    margin-left: 55px;
+}
+
+.missoesJ h3 {
+    margin-top: 40px !important; 
+    margin-bottom: 20px;
+}
+
+
+.conteudo-missoes {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start;
+    gap: 40px; 
+    margin-left: 55px;
+    margin-right: 35px;
+    border: none; 
+    padding: 0;
+}
+
+
+.conteudo-missoes ul {
+    flex: 1;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 25px !important; 
+}
+
+.conteudo-missoes li {
+    background-color: #111 !important; 
+    padding: 25px !important;
+    border-radius: 12px !important;
+    border-left: 4px solid #cea292 !important; 
+    margin: 0 !important; 
+}
+
+
+.conteudo-missoes li strong {
+    display: block !important;
+    font-size: 20px !important;
+    color: #cebb92 !important;
+    margin-bottom: 10px !important;
+}
+
+
+.conteudo-missoes li p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+}
+
+
+.coluna-imagem {
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #4a2e24;
+    border-radius: 6px;
+}
+
+.coluna-imagem img {
+    max-width: 450px !important; 
+    width: 100%;
+    height: auto;
+    margin: 0 !important; 
+}

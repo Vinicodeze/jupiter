@@ -101,18 +101,21 @@ h2{
 
 .containerSobre{
     display: flex;
-    margin-left: 55px;
-    margin-right: 35px;
 
 }
 
 .texto p{
     font-size: 20px;
+    margin-left: 55px;
+    margin-right: 35px;
+    
 
 }
 
 .btn{
     margin-top: 50px;
+    margin-left: 55px;
+    margin-right: 35px;
 }
 .btn a{
     
@@ -251,6 +254,7 @@ h3{
     line-height: 1.5 !important;
     margin: 0 !important;
     color: #ffffff !important;
+    
 }
 
 
@@ -269,7 +273,32 @@ h3{
     margin: 0 !important; 
 }
 
+
+.curiosidades{
+    display:flex;
+    margin-top: 125px;
+}
+
+.containerCurio{
+    margin-left: 105px;
+    margin-right: 55px;
+}
+
+.imglateral{
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 0;
+}
+
 .rodape{
+
+    background-color: #1E1E1E;
+    color:#a7a7a7;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
 
     
 }
